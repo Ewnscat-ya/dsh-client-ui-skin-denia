@@ -1,6 +1,6 @@
 # dsh-client-ui-skin-denia · 达妮娅 · 虚无之泡
 
-DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤（独立分发仓库）。
+DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤。
 
 ## 效果预览
 
