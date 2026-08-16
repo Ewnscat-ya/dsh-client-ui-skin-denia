@@ -24,16 +24,6 @@ DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤（独立分发仓库）�
 - **侧栏收起/展开自适应布局**：立绘 + Q版 + 文字居中联动
 - **黑白娅分别背景图**
 
-## 致谢
-
-| 来源 | 说明 |
-|---|---|
-| [maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale)（Small-tailqwq） | 皮肤工程结构：模块加载工厂模式、内联背景同步、侧边栏伪元素装饰、工作区树标记逻辑、固定层角色舞台架构 |
-| [dsh-client-ui-skin-miku](https://github.com/linxin6666)（@linxin6666） | 玻璃卡片层级：`[id=root]` backdrop-filter + scrim 遮罩模式 |
-| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)（zhu1090093659） | 皮肤工程脚手架 |
-
-\*反馈问题尽可能在 issue 中发起。
-
 ## 版权所有人
 
 | 版权所有人 | 版权所有内容 |
@@ -41,7 +31,7 @@ DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤（独立分发仓库）�
 | Kuro Games（库洛游戏） | 「鸣潮」游戏作品及达妮娅（Denia）角色形象原作 |
 | Ewnscat | 皮肤覆盖层实现（CSS 配色、SVG 装饰、DOM 装饰逻辑） |
 
-\*背景 / 角色 / 画框素材来自用户本地素材库，详见 NOTICE。本皮肤为同人创作，与 Kuro Games 无关联。
+\*背景 / 角色 / 画框素材及预览截图来自用户本地素材库，详见 NOTICE。本皮肤为同人创作，与 Kuro Games 无关联。
 
 ## 安装
 
@@ -68,6 +58,18 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 ```
 
 重启 DSH 后在设置 → 皮肤中选择"达妮娅 · 虚无之泡"。
+
+## 致谢
+
+| 来源 | 说明 |
+|---|---|
+| [maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale)（Small-tailqwq） | 皮肤工程结构：模块加载工厂模式、内联背景同步、侧边栏伪元素装饰、工作区树标记逻辑、固定层角色舞台架构 |
+| [dsh-client-ui-skin-miku](https://github.com/linxin6666)（@linxin6666） | 玻璃卡片层级：`[id=root]` backdrop-filter + scrim 遮罩模式 |
+| [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)（zhu1090093659） | 皮肤工程脚手架 |
+| [maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale) 预览截图 | 皮肤选择界面缩略图参考 |
+| [dsh-client-ui-skin-miku](https://github.com/linxin6666) 预览截图 | 皮肤选择界面缩略图参考 |
+
+\*反馈问题尽可能在 issue 中发起。
 
 ## 许可
 
