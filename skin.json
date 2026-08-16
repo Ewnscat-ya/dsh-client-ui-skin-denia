@@ -1,0 +1,30 @@
+﻿{
+  "id": "denia",
+  "name": "杈惧Ξ濞?路 铏氭棤涔嬫场",
+  "nameEn": "Denia 路 Void Bubble",
+  "author": "Ewnscat",
+  "tagline": "绮夎摑绱笎鍙樺彂鑹?路 娉℃场涓庨攣閾捐楗?路 铏氳川鏄熺┖鑳屾櫙",
+  "description": "銆婇福娼€嬭揪濡▍涓婚鐨偆锛氫互绮夌孩銆佸啺钃濄€佺传鑹叉瀯鎴愯櫄璐ㄥ皯濂宠皟鑹叉澘锛岀敤娉℃场銆侀攣閾俱€佹槦鏄熷潬楗颁綔涓鸿楗版瘝棰橈紝涓哄姞杞姐€佹€濊€冨拰宸ュ叿杩愯鐘舵€侀鐣欏姩鐢婚挬瀛愩€備寒鑹叉ā寮忔槧灏勮揪濡▍榛樿褰㈡€佺殑鎱垫噿鏍″洯姘涘洿锛屾殫鑹叉ā寮忔槧灏勫叡楦ｈВ鏀剧殑铏氳川鏄熺┖銆?,
+  "tags": [
+    "anime",
+    "wuthering-waves",
+    "denia",
+    "bubble",
+    "purple",
+    "pink",
+    "void"
+  ],
+  "accent": "#9B6BD8",
+  "bodyAttr": "data-dsh-denia",
+  "package": "@dsh-external/dsh-client-ui-skin-denia",
+  "wiring": {
+    "id": "ui-skin-denia",
+    "bundleWired": false
+  },
+  "preview": {
+    "light": "preview/light.webp",
+    "dark": "preview/dark.webp"
+  },
+  "order": 8
+}
+

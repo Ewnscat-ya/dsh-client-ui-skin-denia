@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Dev scripts
+embed*.py
+diag.js
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
