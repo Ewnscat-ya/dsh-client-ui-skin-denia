@@ -11,10 +11,32 @@ requirements of CC BY-NC-SA 4.0, all upstream rights holders are credited:
    Waves) 游戏作品及达妮娅 (Denia) 角色形象的权利人。
    The original game and character design.
 
-2. 角色素材 (character assets): Official character art, card art, and
-   splash art sourced from the game's official media.
+2. 背景 / 角色 / 画框素材 (assets): 背景、角色立绘、Q版吉祥物及预览
+   截图素材均来自用户本地素材库，包括官方角色立绘、官方背景图及
+   用户自制 Q 版动画。所有素材以 base64 数据 URI 形式内嵌于皮肤
+   脚本中，不随包单独分发原始文件。
+   Background images, character illustrations, chibi mascot GIFs, and
+   preview screenshots are sourced from the user's local material
+   collection, including official character art, official backgrounds,
+   and user-made chibi animations. All assets are embedded as base64
+   data URIs within the skin script; no original image files are
+   distributed separately.
 
-3. 皮肤制作 (this skin): Ewnscat (@dsh-external/dsh-client-ui-skin-denia)
+3. 皮肤工程结构 (skin engineering structure): 本皮肤的构建预设、皮肤
+   脚手架、布局与动画工程模式源自 dsh-deep-whale 的 maid-atelier
+   （作者 Small-tailqwq）。具体包括：模块加载工厂模式、内联背景同步
+   (syncBackdrop)、侧边栏伪元素装饰 (sidebar-footer:before pseudo-element)、
+   工作区树标记逻辑 (decorateWorkspaceTree)、固定层角色舞台架构。
+   The build preset, skin scaffolding, and layout/animation engineering
+   patterns are derived from maid-atelier by Small-tailqwq.
+
+4. 玻璃卡片层级 (glass card layering): [id=root] 的 backdrop-filter
+   半透明卡片 + scrim 遮罩模式参考 dsh-client-ui-skin-miku
+   （作者 @linxin6666）。
+   The root glass card + scrim backdrop pattern references
+   dsh-client-ui-skin-miku by @linxin6666.
+
+5. 皮肤制作 (this skin): Ewnscat (@dsh-external/dsh-client-ui-skin-denia)
    —— 基于 DeepSeek Harness WebUI 的皮肤覆盖层实现，含 CSS 配色、
    SVG 装饰与 DOM 装饰逻辑。
    The skin overlay implementation for the DeepSeek Harness web GUI.
