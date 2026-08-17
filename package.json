@@ -18,7 +18,7 @@
     "client": {
       "inject": [],
       "platform": "web",
-      "version": "0.1.0-rc.6"
+      "version": "0.1.0-rc.7"
     }
   },
   "license": "CC-BY-NC-SA-4.0",

@@ -94,9 +94,9 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 ## 兼容性
 
-- DSH Web：0.1.0-rc.6（dsh-web-frontend）
+- DSH Web：0.1.0-rc.7（dsh-web-frontend）
 - 平台：Web
-- 最近验证日期：2026-08-17
+- 最近验证日期：2026-08-18
 
 ## 更新日志
 
