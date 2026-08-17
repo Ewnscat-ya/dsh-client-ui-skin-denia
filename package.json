@@ -1,7 +1,7 @@
 {
   "name": "@dsh-external/dsh-client-ui-skin-denia",
   "description": "Denia (Wuthering Waves) themed skin with bubble-and-chain ornaments and void-star palette for the dsh web GUI",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "type": "module",
   "main": "lib/index.js",

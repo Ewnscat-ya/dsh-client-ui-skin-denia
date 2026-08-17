@@ -100,6 +100,11 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 ## 更新日志
 
+### v0.0.3 — 2026-08-17
+
+**修复**
+- 侧边栏底部区域固定高度导致兼容性 bug：其他插件（如 API 余额显示）向 footer 添加内容时设置按钮被挤出画面。改为 `flex:0 0 auto` 自适应高度，保留 `min-height` 兜底
+
 ### v0.0.2 — 2026-08-17
 
 **修复**
