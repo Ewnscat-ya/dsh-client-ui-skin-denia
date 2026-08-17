@@ -110,6 +110,7 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 **新增**
 - 右侧 workbench 面板打开时，左立绘和 Q版表情包自动淡出至 20% 透明度，关闭后恢复
 - 调色板新增控件：表情大小（60–240px）、表情竖直偏移（−200–200px），亮暗双形态同时生效
+- 调色板底部显示当前版本，自动检查 GitHub Release，有新版时提示更新
 - README 兼容性声明、package.json `dsh.client.version` 字段
 
 ### v0.0.1
