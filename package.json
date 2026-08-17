@@ -1,38 +1,40 @@
-{
-  "name": "@dsh-external/dsh-client-ui-skin-denia",
-  "description": "Denia (Wuthering Waves) themed skin with bubble-and-chain ornaments and void-star palette for the dsh web GUI",
-  "version": "0.0.3",
-  "private": true,
-  "type": "module",
-  "main": "lib/index.js",
-  "exports": {
-    ".": "./lib/index.js",
-    "./client": "./lib/client.js",
-    "./skin.json": "./skin.json",
-    "./package.json": "./package.json"
-  },
-  "dsh": {
-    "bundle": {
-      "patch": "./cordis.patch.yml"
-    },
-    "client": {
-      "inject": [],
-      "platform": "web",
-      "version": "0.1.0-rc.6 - 0.1.0-rc.7"
-    }
-  },
-  "license": "CC-BY-NC-SA-4.0",
-  "peerDependencies": {
-    "@deepseek-ai/cordis": "^4.0.1"
-  },
-  "files": [
-    "lib/index.js",
-    "lib/client.js",
-    "cordis.patch.yml",
-    "skin.json",
-    "preview",
-    "LICENSE",
-    "NOTICE",
-    "README.md"
-  ]
+﻿{
+    "name":  "@dsh-external/dsh-client-ui-skin-denia",
+    "description":  "Denia (Wuthering Waves) themed skin with bubble-and-chain ornaments and void-star palette for the dsh web GUI",
+    "version":  "0.0.4",
+    "private":  true,
+    "type":  "module",
+    "main":  "lib/index.js",
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./lib/client.js",
+                    "./skin.json":  "./skin.json",
+                    "./package.json":  "./package.json"
+                },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "inject":  [
+
+                                          ],
+                               "platform":  "web",
+                               "version":  "0.1.0-rc.6 - 0.1.0-rc.7"
+                           }
+            },
+    "license":  "CC-BY-NC-SA-4.0",
+    "peerDependencies":  {
+                             "@deepseek-ai/cordis":  "^4.0.1"
+                         },
+    "files":  [
+                  "lib/index.js",
+                  "lib/client.js",
+                  "cordis.patch.yml",
+                  "skin.json",
+                  "preview",
+                  "LICENSE",
+                  "NOTICE",
+                  "README.md"
+              ]
 }
