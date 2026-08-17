@@ -59,6 +59,12 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 重启 DSH 后在设置 → 皮肤中选择"达妮娅 · 虚无之泡"。
 
+## 兼容性
+
+- DSH Web：v3.0.1
+- 平台：Web
+- 最近验证日期：2026-08-17
+
 ## 致谢
 
 | 来源 | 说明 |
