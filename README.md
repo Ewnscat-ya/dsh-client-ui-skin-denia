@@ -61,7 +61,7 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 ## 调色板
 
-皮肤加载后，界面右下角会出现一个可折叠的调色板面板。所有设置自动保存在浏览器 localStorage，刷新不丢失。
+皮肤加载后，界面右下角会出现一个默认折叠的调色板面板，点击 `🎨` 展开。设置会保存到当前 DSH profile 的皮肤专属文件；刷新、重启、清除浏览器站点存储后仍可恢复。亮色与暗色自定义背景图也会一并保存。
 
 ### 亮色 / 暗色（分形态独立控制）
 
@@ -80,7 +80,7 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 | 立绘高度 | 30–80vh | 55vh |
 | 立绘水平偏移 | −50–50px | 0px |
 | 表情大小 | 60–240px | 120px |
-| 表情竖直偏移 | −200–200px | 0px |
+| 表情竖直偏移 | −420–300px | 0px |
 | 背景透明度 | 20–100% | 100% |
 | 消息文本框 | 开/关 | 关 |
 | 文本框透明度 | 20–100% | 68% |
@@ -94,11 +94,25 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 ## 兼容性
 
-- DSH Web：0.1.0-rc.6、0.1.0-rc.7（dsh-web-frontend）
+- DSH Web：0.1.0-rc.6 至 0.1.0-rc.8（dsh-web-frontend）
 - 平台：Web
-- 最近验证日期：2026-08-18
+- 最近验证日期：2026-08-24
 
 ## 更新日志
+
+### v0.0.5 — 2026-08-24
+
+**新增与改进**
+- 调色板默认折叠为 `🎨` 按钮，减少对侧栏空间的占用
+- 扩大既有的 Q版达妮娅竖直偏移滑块范围至 −420–300px，便于适配不同窗口高度
+- 新增「消息文字配色」开关，可分别应用亮色与暗色形态的消息文字配色规则
+- 调色板设置改为保存至 DSH profile 的皮肤专属文件，不再依赖浏览器 origin；滑块、开关及亮色/暗色自定义背景图均可跨刷新、重启和站点存储清理恢复
+- 自定义背景上传限制为 PNG、JPEG、WebP、GIF，浏览器端单张文件最大 5MB
+- 支持 DSH Web 0.1.0-rc.8
+
+**修复**
+- 修正 DevTools 停靠状态检测：启动阶段不再误判为已打开；关闭 DevTools 后左右立绘和侧栏 Q版可靠恢复。保留打开 DevTools 时的淡出效果
+- 修正侧栏 footer 的弹性布局；其他插件追加底部内容时，皮肤设置入口不会被挤出可视区域
 
 ### v0.0.4 — 2026-08-18
 
@@ -135,7 +149,8 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 | [maid-atelier](https://github.com/Small-tailqwq/dsh-deep-whale)（Small-tailqwq） | 皮肤工程结构思路：模块加载工厂模式、内联背景同步、侧边栏伪元素装饰、工作区树标记逻辑、固定层角色舞台架构 |
 | [dsh-client-ui-skin-miku](https://github.com/linxin6666)（@linxin6666） | 玻璃卡片层级方式：`[id=root]` backdrop-filter + scrim 遮罩模式 |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)（zhu1090093659） | 皮肤工程脚手架 |
-
+| [@frewily](https://github.com/frewily) | 调色板默认折叠与 Q版竖直偏移范围优化 |
+| [@1691695205](https://github.com/1691695205) | 消息文字配色开关及亮色/暗色消息配色规则 |
 
 \*反馈问题尽可能在 issue 中发起。
 
