@@ -96,16 +96,28 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 
 - DSH Web：0.1.0-rc.6 至 0.1.1-rc.2（dsh-web-frontend）
 - 平台：Web
-- 最近验证日期：2026-08-24
+- 最近验证日期：2026-09-08
 
 ## 更新日志
+
+### v0.0.6 — 2026-09-08
+
+**修复**
+- 修复开启「消息文本框」后设置页 / 插件列表 / 模型列表等卡片被误加消息框装饰的问题（GitHub issue）：消息标记改为双重门控——元素必须位于 `_viewArea` 会话视图内**且**携带 DSH 的 `data-chat-flow-kind` 属性（仅聊天节点具备），同时覆盖 `steering` 类消息；离开会话视图时自动清除残留标记
+- 修复皮肤停用 / 重载后 500ms 轮询定时器与 resize 监听不释放的问题（运行期侦测行为不变）
+- 修复调整「泡泡数量」时泡泡速度被二次缩放的问题（此前速度设 200% 实际约为 400%）
+- 修复「立绘水平偏移」以内联样式覆盖 hero + 收起侧栏定位规则的问题，偏移改走 CSS 变量
+- 版本更新提示链接改为 DOM API 生成，不再拼接 innerHTML，并补充 `rel="noopener noreferrer"`
+
+**其他**
+- `dsh.client.version` 兼容声明对齐实测范围：0.1.0-rc.6 至 0.1.1-rc.2
 
 ### v0.0.5 — 2026-08-24
 
 **新增与改进**
 - 调色板默认折叠为 `🎨` 按钮，减少对侧栏空间的占用
 - 扩大既有的 Q版达妮娅竖直偏移滑块范围至 −420–300px，便于适配不同窗口高度
-- 新增「消息文字配色」开关，可分别应用亮色与暗色形态的消息文字配色规则
+- 新增「消息文字配色」开关，可分别应用亮色与暗色形态的更优化消息文字配色规则
 - 调色板设置改为保存至 DSH profile 的皮肤专属文件，不再依赖浏览器 origin；滑块、开关及亮色/暗色自定义背景图均可跨刷新、重启和站点存储清理恢复
 - 自定义背景上传限制为 PNG、JPEG、WebP、GIF，浏览器端单张文件最大 5MB
 - 支持 DSH Web 0.1.0-rc.8
@@ -150,7 +162,7 @@ dsh plugin --profile web add ../dsh-client-ui-skin-denia
 | [dsh-client-ui-skin-miku](https://github.com/linxin6666)（@linxin6666） | 玻璃卡片层级方式：`[id=root]` backdrop-filter + scrim 遮罩模式 |
 | [dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)（zhu1090093659） | 皮肤工程脚手架 |
 | [@frewily](https://github.com/frewily) | 调色板默认折叠与 Q版竖直偏移范围优化 |
-| [@1691695205](https://github.com/1691695205) | 消息文字配色开关及亮色/暗色消息配色规则 |
+| [@1691695205](https://github.com/1691695205) | 消息文字配色开关及亮色/暗色消息配色规则优化 |
 
 \*反馈问题尽可能在 issue 中发起。
 
