@@ -16,9 +16,11 @@
   ],
   "accent": "#9B6BD8",
   "bodyAttr": "data-dsh-denia",
-  "package": "@dsh-external/dsh-client-ui-skin-denia",
+  "package": "@dsh-external/dsh-client-ui-skin-denia-rewrite",
+  "version": "2.0.0",
+  "settingsSection": "denia",
   "wiring": {
-    "id": "ui-skin-denia",
+    "id": "ui-skin-denia-rewrite",
     "bundleWired": false
   },
   "preview": {
