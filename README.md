@@ -1,17 +1,14 @@
 # dsh-client-ui-skin-denia · 达妮娅 · 虚无之泡
 
-> **本包 v2.0.0 · 插件 id `ui-skin-denia-rewrite`。**
-> 它与上游原版（`ui-skin-denia`）、以及「设置页版」变体
-> （`ui-skin-denia-settings`）可以并列安装，但**同一时间只能启用一个皮肤**——
-> 三者共用同一套 CSS/DOM 覆盖与 `/api/dsh-denia/palette-settings` 路由。
-> 本仓库是上游 v1.0.0 的 fork：重写了宿主/客户端结构（见下文对照表），
+> **v2.1.0 · 插件 id `ui-skin-denia-rewrite`**，是上游 v1.0.0 的重写分支：
 > 图片改为外链资源、设置搬进 DSH 设置页、立绘移到文字之下、桌宠可拖动并锁定。
+>
+> 它可以和上游原版（`ui-skin-denia`）、「设置页版」变体（`ui-skin-denia-settings`）
+> 并列安装，但**同一时间只能启用一个皮肤**——三者覆盖同一套 CSS/DOM，
+> 而本包独占 `/api/dsh-denia-rewrite/*` 路由。
 
-
-DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤。
-
-> 本仓库是 [Ewnscat-ya/dsh-client-ui-skin-denia](https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia) v1.0.0 的 fork，
-> 面向 DSH 桌面端 0.2.1 重写了宿主/客户端结构（见「与上游的差异」）。
+DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤。上游：
+[Ewnscat-ya/dsh-client-ui-skin-denia](https://github.com/Ewnscat-ya/dsh-client-ui-skin-denia)。
 
 ## 效果预览
 
@@ -89,7 +86,7 @@ DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤。
 ```sh
 # 从本目录打包安装（构建产物已随包提供，无构建步骤）
 npm pack
-dsh plugin --profile <profile> add ./dsh-external-dsh-client-ui-skin-denia-2.0.0.tgz
+dsh plugin --profile <profile> add ./dsh-external-dsh-client-ui-skin-denia-rewrite-2.1.0.tgz
 ```
 
 请用压缩包安装，不要用目录直接 `add`：pnpm 对目录使用 link 语义，
@@ -113,6 +110,21 @@ dsh plugin --profile <profile> add ./dsh-external-dsh-client-ui-skin-denia-2.0.0
 | 桌宠 | 显示 / 大小 / 锁定位置 / 重置位置 | 开；60–240px（110）；关 |
 
 亮色与暗色的立绘、背景图分开记忆。
+
+## 更新日志
+
+### v2.1.0 — 2026-11-10
+
+- **新会话欢迎文案回来了**：`达妮娅 / 虚质科学课 · 星炬学院 /「……你来了啊。要聊什么？」`；按 hero 元素实时定位，拖侧栏后自动重新居中，发出第一条消息即消失
+- **消息文本框按 Turn 分组**：一个回复一个框；思考过程（折叠卡片与展开后的命令、写入行）单独成框，卡片的标题行不再加框
+- **打标不再影响布局**：内边距/外边距改挂到静态选择器，边框改用 `inset` 阴影，流式输出时不再上下跳
+- **锁链边框跟随分隔条**：`ResizeObserver` 改为每次测量时重新挂到当前侧栏/中栏节点，拖分隔条、切会话后都能跟上
+- **修复「锁定位置」开关无反应**：上一版误调用了已不存在的 `applyPetPosition()`，导致开关与坐标保存一起失效
+- 背景模糊只作用于壁纸（0–12px 可调），立绘恢复清晰
+
+### v2.0.0 — 2026-11-04
+
+首个重写版：资源外链（`lib/client.js` 从 2.4 MB 降到约 62 KB）、设置页取代右下角调色板、立绘置于文字之下、桌宠可拖动并支持锁定、渲染与观察逻辑重构。
 
 ## 已知边界
 
