@@ -8,7 +8,7 @@ DeepSeek Harness Web GUI 的鸣潮达妮娅主题皮肤。
 
 | 布景之形（亮色） | 幻灭之形（暗色） |
 |---|---|
-| [![布景之形](preview/light.webp)](preview/light.webp) | [![幻灭之形](preview/dark.webp)](preview/dark.webp) |
+| [![布景之形](assets/preview-light.gif)](assets/preview-light.gif) | [![幻灭之形](assets/preview-dark.gif)](assets/preview-dark.gif) |
 
 ## 特性
 
